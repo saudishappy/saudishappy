@@ -1,0 +1,203 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+footer{
+    position:relative;
+    width: 100%;
+    background-color: #3586ff;
+    min-height: 200px;
+    padding: 20px 50px;
+    margin-top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+footer #social_icon, #menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer #social_icon li, #menu li{
+    list-style-type: none;
+}
+
+footer #social_icon li a, #menu li a{
+    font-size: 2.5em;
+    color: white;
+    margin: 0px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer #social_icon li a:hover{
+    transform: translateY(-20px);
+}
+
+footer #menu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0px 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+footer #menu li a:hover{
+    opacity: 1;
+    font-size: 1.5em;
+    }
+
+footer p, a{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    
+}
+
+footer p a:hover{
+    transition-duration: 0.5s;
+    color: white;
+    font-size: 1.5em;
+    transform: translateY(-10px);
+}
+
+#marquee{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+
+}
+
+#btn{
+    color: white;
+    background-color: white;
+}
+
+
+
+p{
+    cursor: pointer;
+}
+
+#image{
+background-image: url(IMAGES/SAUD5.png);
+height: 480px;
+background-size: cover;
+position: relative;
+}
+
+#div{
+    color: rgb(0, 0, 0);
+}
+
+.services{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.services:hover{
+    transform: translateX(10px);
+    font-size: 20px;
+    box-shadow: 5px 5px 15px 5px gray;
+}
+
+.servicesss{
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.servicesss:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+
+.wrapper .dynamic-texts{
+line-height: 35px;
+overflow-x: hidden;
+
+}
+
+.dynamic-texts li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    top: 0;
+    animation: slide 6s infinite;
+}
+
+@keyframes slide {
+    0%{
+        color: red;
+    }
+    25%{
+        color: cyan;
+    }
+    50%{
+        color: gold;
+    }
+    75%{
+        color: greenyellow;
+    }
+    100%{
+        color: black; 
+    }
+    
+}
+
+.dynamic-texts li span{
+    position: relative;
+}
+
+.dynamic-texts li span::after{
+    
+    color: rgb(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid red;
+    
+}
+
+.projects img{
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+}
+.projects img:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 5px cyan;
+}
+
+.team img{
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.team img:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 5px gainsboro;
+}
+
+#nav3{
+    position: fixed;
+    width: 100%;
+}
